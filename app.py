@@ -18,5 +18,9 @@ def post_reg():
     more = request.form.get("more")
     return "注册成功"
 
+@app.route('/mi',methods=['get'])
+def get_mi():
+    return render_template('mi.html')
+
 if __name__ == "__main__":
     app.run()
